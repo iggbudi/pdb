@@ -1,0 +1,31 @@
+CATATAN PENGUJIAN MINGGU 6 — Laporan Penjualan Kedai Rasa
+Nama/NIM :
+Tanggal  :
+
+== Pertemuan 6.1 ==
+Kasus                         | Filter yang dipakai              | Hasil yang terlihat | Sesuai? (Ya/Tidak)
+Periode berisi data           | 01/09/2026–30/09/2026            |                     |
+Cocok dengan hitung manual    | 03/08/2026–07/08/2026            |                     |
+Periode tanpa transaksi       | 01/10/2026–31/10/2026            |                     |
+Rentang belum lengkap         | klik satu tanggal saja           |                     |
+Kategori kosong               | hapus semua kategori             |                     |
+HAVING menyaring              | slider Rp200.000, seluruh periode|                     |
+HAVING terlalu tinggi         | slider Rp500.000, September      |                     |
+
+== Pertemuan 6.2 ==
+Kasus                         | Filter yang dipakai              | Hasil yang terlihat | Sesuai? (Ya/Tidak)
+Rekonsiliasi seluruh periode  | filter bawaan                    |                     |
+Rekonsiliasi dengan filter    | September, hanya Minuman         |                     |
+Laporan per bulan             | filter bawaan                    |                     |
+CSV sesuai tampilan           | unduh Per Kategori, =SUM(omzet)  |                     |
+Nama file mengikuti filter    | ubah periode lalu unduh lagi     |                     |
+HAVING dan CSV                | slider Rp200.000, unduh Per Produk|                    |
+Periode kosong                | Oktober 2026                     |                     |
+
+== Refleksi ==
+1. Perbedaan WHERE dan HAVING:
+2. Alasan nilai filter dikirim lewat parameter ?:
+3. SUM/AVG saat tidak ada data, dan cara aplikasi mengatasinya:
+4. Laporan untuk keputusan stok vs keputusan harga (contoh Pisang Goreng):
+5. Alasan laporan perlu diekspor ke CSV dan ditelusuri ke data detail:
+6. Alasan angka di CSV disimpan tanpa pemisah ribuan:
